@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing E-commerce</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <script src="js/JQuery.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/3d310777d7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="social-call">
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="phone">
+          <span>Call +123456789</span>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <a href="#" class="logo"> <span>Cloth</span>ingE. </a>
+
+        <div class="toggle"></div>
+
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+
+          <li>
+            <a href="#">Men</a>
+            <span class="sale-label">Sale</span>
+          </li>
+
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+        <div class="right-menu">
+          <a href="javascript:void(0);" class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="javascript:void(0);" class="user">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping">
+              <span class="num-cart-product">0</span>
+            </i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SearchBar -->
+    <div class="search-bar">
+      <div class="search-input">
+        <input type="text" placeholder="Search For Product" />
+        <a href="javascript:void(0);" class="search-cancel">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form">
+      <div class="login-form">
+        <a href="javascript:void(0);" class="form-cancel">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+
+        <strong>Log In</strong>
+        <form>
+          <input
+            type="email"
+            placeholder="Example@gmail.com"
+            name="email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <div class="form-btns">
+          <a href="#" class="forget">Forget Password?</a>
+          <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+        </div>
+      </div>
+
+      <div class="sign-up-form">
+        <a href="javascript:void(0);" class="form-cancel">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+
+        <strong>Sign Up</strong>
+        <form>
+          <input type="text" placeholder="Full Name" name="fullname" required />
+          <input
+            type="email"
+            placeholder="Example@gmail.com"
+            name="email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input type="submit" value="Sign Up" />
+        </form>
+        <div class="form-btns">
+          <a href="javascript:void(0);" class="already-account">Already Have An Account?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-slider -->
+    <ul id="adaptive" class="cs-hidden">
+      <li class="item-a">
+        <div class="full-slider-box f-slide-1">
+          <div class="f-slider-text-container">
+            <div class="f-slider-text">
+              <span>Limited offer</span>
+              <strong
+                >30% off <br />
+                with <font>promo code</font></strong
+              >
+              <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="item-a">
+        <div class="full-slider-box f-slide-2">
+          <div class="f-slider-text-container">
+            <div class="f-slider-text">
+              <span>Limited offer</span>
+              <strong
+                >30% off <br />
+                with <font>promo code</font></strong
+              >
+              <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="item-a">
+        <div class="full-slider-box f-slide-3">
+          <div class="f-slider-text-container">
+            <div class="f-slider-text">
+              <span>Limited offer</span>
+              <strong
+                >30% off <br />
+                with <font>promo code</font></strong
+              >
+              <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Featured categories -->
+    <div class="feature-heading">
+      <h2>Featured Categories</h2>
+    </div>
+
+    <ul id="autoWidth" class="cs-hidden">
+      <li class="item">
+        <div class="feature-box">
+          <a href="#">
+            <img src="img/feature_1.jpg" />
+          </a>
+        </div>
+
+        <span>T-shirt</span>
+      </li>
+
+      <li class="item">
+        <div class="feature-box">
+          <a href="#">
+            <img src="img/feature_2.jpg" />
+          </a>
+        </div>
+
+        <span>T-shirt</span>
+      </li>
+
+      <li class="item">
+        <div class="feature-box">
+          <a href="#">
+            <img src="img/feature_3.jpg" />
+          </a>
+        </div>
+
+        <span>T-shirt</span>
+      </li>
+
+      <li class="item">
+        <div class="feature-box">
+          <a href="#">
+            <img src="img/feature_4.jpg" />
+          </a>
+        </div>
+
+        <span>T-shirt</span>
+      </li>
+
+      <li class="item">
+        <div class="feature-box">
+          <a href="#">
+            <img src="img/feature_5.jpg" />
+          </a>
+        </div>
+
+        <span>T-shirt</span>
+      </li>
+
+      <li class="item">
+        <div class="feature-box">
+          <a href="#">
+            <img src="img/feature_6.jpg" />
+          </a>
+        </div>
+
+        <span>T-shirt</span>
+      </li>
+    </ul>
+
+    <!-- new arrial -->
+    <section class="new-arrival">
+      <div class="arrival-heading">
+        <strong>New Arrival</strong>
+        <p>We Provide You New Design Fashion Clothes</p>
+      </div>
+
+      <div class="product-container">
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-1.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-2.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-3.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-4.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-5.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-6.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-7.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-8.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sale -->
+    <section class="sale">
+      <div class="sale-box">
+        <img src="img/sale-1.jpg" />
+        <a href="#">
+          <div class="sale-text">
+            <strong>Bag With Rose Pattern</strong>
+            <span>Sale off 25%</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="sale-box">
+        <img src="img/sale-2.jpg" />
+        <a href="#">
+          <div class="sale-text">
+            <strong>Bag With Rose Pattern</strong>
+            <span>Sale off 25%</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="sale-box">
+        <img src="img/sale-3.jpg" />
+        <a href="#">
+          <div class="sale-text">
+            <strong>Bag With Rose Pattern</strong>
+            <span>Sale off 25%</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- feature items -->
+    <section class="new-arrival">
+      <div class="arrival-heading">
+        <strong>Feature Items</strong>
+        <p>We Provide You New Design Fashion Clothes</p>
+      </div>
+
+      <div class="product-container">
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-1.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-2.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-3.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-4.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-5.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-6.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-7.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="product-img">
+            <a href="#" class="add-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <img src="img/p-8.png" />
+          </div>
+
+          <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-shirt</a>
+            <span class="p-price">$22.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <div class="banner-box f-slide-3">
+      <div class="banner-text-container">
+        <div class="banner-text">
+          <span>Limited offer</span>
+          <strong
+            >30% off <br />
+            with <font>promo code</font></strong
+          >
+          <a href="#" class="banner-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <section class="services">
+        <div class="services-box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Free Shipping</span>
+            <p>Free Shipping For all US orders</p>
+        </div>
+
+        <div class="services-box">
+            <i class="fa-solid fa-headphones"></i>
+            <span>Support 24/7</span>
+            <p>We support 24h a day</p>
+        </div>
+
+        <div class="services-box">
+            <i class="fa-solid fa-arrows-spin"></i>
+            <span>100% money back</span>
+            <p>We have 30 days to return</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <span class="copyright">
+            Copyright 2024
+        </span>
+
+        <div class="subscribe">
+            <form>
+                <input type="email" placeholder="Example@gmail.com" required />
+                <input type="submit" value="Subscribe" />
+            </form>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
